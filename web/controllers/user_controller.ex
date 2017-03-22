@@ -11,4 +11,11 @@ defmodule Rumbl.UserController do
     render conn, "show.html", user: user
   end
   
+  alias Rumbl.User
+  
+  def new(conn, _params) do
+    changeset = User.changeset(%User{})
+    render conn, "new.html", changeset: changeset
+  end
+  
 end
