@@ -40,4 +40,5 @@ config :rumbl, Rumbl.Repo,
   password: "starting up po$tgres n0w",
   database: "rumbl_dev",
   hostname: "localhost",
+  port: 5400,
   pool_size: 10
